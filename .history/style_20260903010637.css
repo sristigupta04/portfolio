@@ -1,0 +1,120 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #0a0a0a;
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+    background: white;
+    color: black;
+}
+
+
+/* =========================
+   CUSTOM SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 1px;
+
+    background: white;
+
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#heroTitle {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+#heroTag {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#heroDescription {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#heroButtons {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    #heroTitle {
+        letter-spacing: -0.06em;
+    }
+
+}
