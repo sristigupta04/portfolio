@@ -1,54 +1,24 @@
-import { Canvas } from "@react-three/fiber";
-import {OrbitControls,  Text} from "@react-three/drei";
+export default function Background() {
+  return (
+    <div className="decorative-background" aria-hidden="true">
+      <div className="background-glow background-glow-one" />
+      <div className="background-glow background-glow-two" />
 
-type AboutProps = {
-    onClick: () => void;
+      <div className="background-grid" />
 
-}
-type LandingProps = {
-    onOpenAbout: () => void;
-}
- function Aboutportal({onClick}: AboutProps){
-    return (
-        <group position={[3,1.5,-3]}
-        onClick={onClick}
-            onPointerOver={(e)=>{
-           e.stopPropagation();
-           document.body.style.cursor = 'pointer';
+      <div className="background-orbit background-orbit-one" />
+      <div className="background-orbit background-orbit-two" />
 
-            }}
-            onPointerOut={(e)=>{
-                document.body.style.cursor = 'default';
-            }
+      <div className="background-star background-star-one">✦</div>
+      <div className="background-star background-star-two">✦</div>
+      <div className="background-star background-star-three">✦</div>
+      <div className="background-star background-star-four">✦</div>
 
-        }>
-  <mesh>
-<torusGeometry args={[0.5, 0.2, 16, 100]} />
-<meshStandardMaterial emissive="white" emissiveIntensity={2} />
-  </mesh>   
+      <div className="background-cross background-cross-one">+</div>
+      <div className="background-cross background-cross-two">+</div>
 
-  <Text 
-  position={[0,-1.5,0]}
-  fontSize={0.35}
-  anchorX="center"
-  anchorY="middle"
-  >
-    About
-  </Text>
-        </group>   
-
-    )
-}
-
-
-export default function Landingportal({onOpenAbout}: LandingProps){
-    return(
-        <Canvas camera={{position:[0,3,8],fov:60}}>
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[10,10,5]} intensity={1} />
-            <directionalLight position={[-10,-10,-5]} intensity={1} />
-            <OrbitControls enablePan={false} enableZoom={false} />
-            <Aboutportal onClick={onOpenAbout}/>
-        </Canvas>
-    )
+      <div className="background-corner background-corner-left" />
+      <div className="background-corner background-corner-right" />
+    </div>
+  );
 }
