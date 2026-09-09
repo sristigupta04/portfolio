@@ -11,11 +11,11 @@ const navItems =[
 export default function Navbar() {
   const [open, setopen] = useState(false);
   const handle =() =>{
-    setopen(!open);
+    setopen(false);
   }
  return (
     <header className="navbar">
-        <div className="inner">
+        <div className="navbar-inner">
             <a href="#top" className="navbar-logo" onClick={handle}>
                 sristi <span>✦</span>
             </a>
@@ -33,7 +33,7 @@ export default function Navbar() {
         >  <span />
           <span /></button>
         </div>
-        <div className={`navbar-dropdown${open? "navbar-dropdown-open": ""}`}>
+        <div className={`mobile-menu${open? "mobile-menu-visible": ""}`}>
             {navItems.map((item) => (
                 <a key={item.label} href={item.href}   className="mobile-menu-link" onClick={handle}>
                     {item.label}
