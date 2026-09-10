@@ -1,40 +1,39 @@
+export default function About() {
+  return (
+    <section id="about" className="portfolio-section">
+      <div className="portfolio-container about-content">
+        <div className="about-intro">
+          <p className="about-eyebrow mono-font">About me</p>
 
+          <p className="about-large-text display-font">
+            I&apos;m a developer who enjoys turning ideas into thoughtful
+            digital experiences.
+          </p>
 
-export default function About(){
-    return (
-        <section id="about" className="portfolio-section about-section">
-            <div className="portfolio-container">
-                <div className="section-header">
-                <div className="section-number">
-                    <h1 className="section-title">About me</h1>
-                    <span className="section-line" />
-                </div>
-                <div className="about-content">
-                    <div className="about-intro">
-                        <p className="about-large-text display-font">
-                      I&apos;m a developer who enjoys turning ideas into thoughtful
-              digital experiences.      
-                        </p>
-                    </div>
-                </div>
-                <div className="about-details">
-                    <p> I work across frontend development, backend integration, and
-              interface design. I care about building products that are not
-              only functional, but also feel simple and intentional to use.
-            </p>
-            <div className="about-meta">
-                <div> <span className="mono-font">focus</span>
-                <strong>web development</strong></div>
-                <div>
+          <p className="about-meta">
+            I work across frontend development, backend integration, and
+            interface design. I care about building products that are not
+            only functional, but also feel simple and intentional to use.
+          </p>
 
-
-                <strong> Next.js · React · TypeScript</strong>
-
-                </div>
+          <div className="about-details">
+            <div className="about-detail-item">
+              <span className="about-detail-label">Focus</span>
+              <span className="about-detail-value">Web development</span>
             </div>
-                </div>
+
+            <div className="about-detail-item about-stack-pill">
+              <span className="about-detail-label">Stack</span>
+              <span className="about-detail-value">
+                Next.js · React · TypeScript
+              </span>
             </div>
-            </div>
-        </section>
-    )
+          </div>
+        </div>
+
+        {/* second grid column — .about-content expects this. Point src at a real photo */}
+        <img src="/images/pic01.jpeg" alt="Sristi" />
+      </div>
+    </section>
+  );
 }

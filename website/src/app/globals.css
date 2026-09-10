@@ -1887,3 +1887,115 @@ img {
     font-size: 47px;
   }
 }
+
+/* =========================================================
+   SECTION DIVIDER (deep concave curve)
+========================================================= */
+
+.section-divider {
+  position: relative;
+
+  width: 100%;
+  height: 140px;
+
+  margin-top: -1px;
+
+  pointer-events: none;
+}
+
+.section-divider svg {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+.section-divider-flip {
+  transform: rotate(180deg);
+}
+
+/* Gives the curve a visible edge even when both sections share --bg */
+.section-divider::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 140px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.28),
+    transparent 55%
+  );
+
+  clip-path: path("M0,0 C 420,200 1020,200 1440,0 L1440,220 L0,220 Z");
+
+  z-index: -1;
+}
+
+/* =========================================================
+   ABOUT — eyebrow, focus row, stack pill
+========================================================= */
+
+.about-eyebrow {
+  margin-bottom: 18px;
+
+  color: var(--accent-soft);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  letter-spacing: 0.14em;
+}
+
+.about-details {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+.about-detail-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 13px;
+}
+
+.about-detail-label {
+  color: var(--muted-dark);
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  font-size: 10px;
+}
+
+.about-detail-value {
+  color: var(--cream-soft);
+}
+
+.about-stack-pill {
+  padding: 8px 14px;
+
+  border: 1px solid var(--line);
+
+  background: var(--panel);
+}
