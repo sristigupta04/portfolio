@@ -27,8 +27,8 @@ export default function About(){
                 <strong>web development</strong></div>
                 <div>
 
- <span className="mono-font">STACK</span>
-                <strong>Next.js · React · TypeScript</strong>
+
+                <strong> Next.js · React · TypeScript</strong>
 
                 </div>
             </div>

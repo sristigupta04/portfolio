@@ -1,45 +1,34 @@
 "use client";
 
-import {useState} from "react";
-
-const navItems =[
-    {label:"work",href:"#work"},
-    {label:"about",href:"#about"},
-    {label:"experience",href:"#experience"},
-    {label:"contact",href:"#contact"}
+const navItems = [
+  { label: "Work", href: "#work" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Contact", href: "#contact" },
 ];
+
 export default function Navbar() {
-  const [open, setopen] = useState(false);
-  const handle =() =>{
-    setopen(false);
-  }
- return (
+  return (
     <header className="navbar">
-        <div className="navbar-inner">
-            <a href="#top" className="navbar-logo" onClick={handle}>
-                sristi <span>✦</span>
+      <div className="inner">
+      <a href="#top" className="navbar-logo">
+  Sono la mia forza. <span>✦</span>
+</a>
+
+        <nav className="navbar-links" aria-label="Main Navigation">
+          {navItems.map((item, index) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className={`navbar-link ${
+                index === 0 ? "navbar-link-active" : ""
+              }`}
+            >
+              {item.label}
             </a>
-            <nav className="navbar-links" aria-label="Main Navigation">
-                {navItems.map((item,index) => (
-                    <a key={item.label} href={item.href} onClick={handle}>
-                    className={`navbar-link${index=== 0?"navbar-link-active":""}`}
-                    </a>
-                ))}
-            </nav>
-            <button type="button" className={`navbar-menu${open? "navbar-menu": ""}`}
-            onClick={()=>setopen((current)=> !current)}
-            aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-        >  <span />
-          <span /></button>
-        </div>
-        <div className={`mobile-menu${open? "mobile-menu-visible": ""}`}>
-            {navItems.map((item) => (
-                <a key={item.label} href={item.href}   className="mobile-menu-link" onClick={handle}>
-                    {item.label}
-                </a>
-            ))}
-        </div>
+          ))}
+        </nav>
+      </div>
     </header>
- )
+  );
 }
