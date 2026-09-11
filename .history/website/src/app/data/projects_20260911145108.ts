@@ -1,0 +1,67 @@
+export type Project = {
+  number: string;
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl?: string;
+  link?: string;
+};
+
+export const projects: Project[] = [
+  {
+    number: "01",
+    title: "Coffee Shop",
+    description:
+      "Full-stack coffee shop ordering platform designed with system-design principles, separating storefront and order-management services. Auth.js authentication and a type-safe PostgreSQL schema via Prisma, containerized with Docker.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL"],
+    imageUrl: "/images/projects/coffee-shop.png",
+  },
+  {
+    number: "02",
+    title: "Expense Tracker",
+    description:
+      "A full-stack expense tracking app with a structured backend and frontend, deployed both locally and on Vercel.",
+    tags: ["React", "UI/UX", "API"],
+    imageUrl: "/images/projects/resqued.png",
+  },
+  {
+    number: "03",
+    title: "Microservice Backend",
+    description:
+      "Modular microservice backend in TypeScript and Express.js, exposing a REST interface consumed by both a CLI client and a web frontend, with structured error handling across independently deployable service modules.",
+    tags: ["Node.js", "Express.js", "REST APIs"],
+    imageUrl: "/images/projects/yachty.png",
+  },
+  {
+    number: "04",
+    title: "Weather App",
+    description:
+      "A weather application showing daily forecasts and mapped conditions for locations worldwide.",
+    tags: ["React", "API", "UI/UX"],
+    imageUrl: "/images/projects/weather-app.png",
+  },
+  {
+    number: "05",
+    title: "Portfolio Website",
+    description:
+      "This personal portfolio site, built with Next.js — showcasing projects, skills, and experience.",
+    tags: ["Next.js", "React", "TypeScript"],
+    imageUrl: "/images/projects/portfolio.png",
+  },
+  {
+    number: "06",
+    title: "Tic Tac Toe",
+    description:
+      "A classic Tic Tac Toe game with an unbeatable AI opponent powered by the minimax algorithm.",
+    tags: ["React", "JavaScript", "Minimax"],
+    imageUrl: "/images/projects/tic-tac-toe.png",
+  },
+  {
+    number: "07",
+    title: "Airbnb Clone",
+    description:
+      "Full-stack property listing platform with JWT/Auth.js authentication and dynamic search, connected to a MongoDB-backed user-management service and containerized with Docker.",
+    tags: ["Next.js", "MongoDB", "Docker"],
+    imageUrl: "/images/projects/airbnb-clone.png",
+  },
+];
