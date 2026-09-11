@@ -1,15 +1,24 @@
+const stack = [
+  "System Design",
+  "Next.js",
+  "React",
+  "Tailwind CSS",
+  "typeScript",
+  "SQL",
+  "DevOps",
+  "Database design",
+];
+
 export default function About() {
   return (
-    <section id="about" className="portfolio-section">
+    <section className="portfolio-section" id="about">
       <div className="portfolio-container about-content">
         <div className="about-intro">
-          <p className="about-eyebrow mono-font">About me</p>
-
+          <p className="about-eyebrow mono-font">About Me</p>
           <p className="about-large-text display-font">
-            I&apos;m a developer who enjoys turning ideas into thoughtful
-            digital experiences.
+            I&apos;m a passionate software developer with a love for creating
+            innovative solutions.
           </p>
-
           <p className="about-meta">
             I work across frontend development, backend integration, and
             interface design. I care about building products that are not
@@ -21,18 +30,23 @@ export default function About() {
               <span className="about-detail-label">Focus</span>
               <span className="about-detail-value">Web development</span>
             </div>
+          </div>
 
-            <div className="about-detail-item about-stack-pill">
+          <div className="about-details">
+            <div className="about-detail-item">
               <span className="about-detail-label">Stack</span>
-              <span className="about-detail-value">
-                Next.js · React · TypeScript
-              </span>
+            </div>
+            <div className="about-stack-pills">
+              {stack.map((item) => (
+                <span key={item} className="about-stack-pill">
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* second grid column — .about-content expects this. Point src at a real photo */}
-        <img src="/images/pic01.jpeg" alt="Sristi" />
+        <img src="images/pic01.jpeg" alt="Sristi" />
       </div>
     </section>
   );

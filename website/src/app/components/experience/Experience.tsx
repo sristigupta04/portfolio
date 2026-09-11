@@ -4,52 +4,62 @@ export default function Experience() {
       <div className="portfolio-container">
         <div className="section-heading">
           <span className="section-number">03</span>
-          <h2 className="section-title">Experience</h2>
+          <h2 className="section-title">Certifications</h2>
           <span className="section-line" />
         </div>
 
-        <div className="experience-list">
-          <article className="experience-item">
-            <div className="mono-font">2022 — Present</div>
+      <div className="experience-list">
+        <article className="experience-item">
+          <div className="mono-font">2025</div>
+          <div className="expericence-content">
+            <h3>Full Stack Developer</h3>
+            <p className="experience-company">Udemy</p>
+         
+          </div>
+        </article>
+ 
 
-            <div className="experience-content">
-              <h3>Full Stack Developer</h3>
-              <p className="experience-company">Freelance / Independent</p>
-              <p>
-                Building responsive web applications, developing APIs,
-                connecting frontend interfaces with backend systems, and
-                creating complete user experiences.
-              </p>
 
-              <div className="experience-tags">
-                <span>Next.js</span>
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Python</span>
-              </div>
-            </div>
-          </article>
 
-          <article className="experience-item">
-            <div className="mono-font">Project Based</div>
 
-            <div className="experience-content">
-              <h3>Web Developer</h3>
-              <p className="experience-company">Selected Projects</p>
-              <p>
-                Worked on complete web projects involving UI development,
-                backend integration, authentication, databases, and
-                deployment-ready application flows.
-              </p>
+ <article  className="experience-item">
+  <div className="mono-font">2025</div>
+  <div className="expericence-content">
+    <h3>Data Analytics Simulation</h3>
+    <p className="experience-company">Forage</p>
+    <div className="experience-tags">
+      <span>Data Analytics</span>
+    </div>
+      </div>
+     </article>
 
-              <div className="experience-tags">
-                <span>Frontend</span>
-                <span>Backend</span>
-                <span>API</span>
-                <span>Database</span>
-              </div>
-            </div>
-          </article>
+
+     <article className="experience-item">
+      <div className="mono-font">2025</div>
+      <div className="expericence-content">
+        <h3>Intro to C programming</h3>
+        <p className="experience-company">NPTEL</p>
+        <div className="experience-tags">
+          <span>C Programming</span>
+        </div>
+      </div>
+    </article>
+
+
+
+    <article className="experience-item">
+      <div className="mono-font">2024</div>
+      <div className="expericence-content">
+        <h3>Full Stack  web Developer</h3>
+        <p className="experience-company">Apna College</p>
+        <div className="experience-tags">
+          <span>Database</span>
+          <span>System Design</span>
+          <span>Frontend</span>
+          <span>Backend</span>
+        </div>
+      </div>
+    </article>
         </div>
       </div>
     </section>
