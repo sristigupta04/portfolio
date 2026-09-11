@@ -1,0 +1,22 @@
+
+"use client "
+
+import Navbar from "./Navbar";
+import Background from "./background";
+
+
+export default function Hero(){
+    return(
+        <section id="top" className="hero">
+            <Background />
+            <Navbar/>
+            <div className="hero-content portfolio-container">
+                <p className="hero-eyebrow mono-font">Creative developer</p>
+        <h1 className="hero-title display-font">hi,I&apos;m<span>sristi</span> </h1>
+        <p className="hero-description">
+            I build thoughtful digital experiences where clean development
+          meets creative design.
+        </p>
+        </section>
+    )
+}

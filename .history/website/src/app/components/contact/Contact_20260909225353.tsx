@@ -1,0 +1,28 @@
+export default function Contact(){
+    return(
+        <section 
+        id="contact"
+        className="portfolio-section contact-section">
+            <div className="portfolio-container">
+                <div className="section-heading">
+                    <span className="section-number">04</span>
+                    <h2 className="section-title">Let&apos;s Connect</h2>
+                    <span className="section-line"/>
+                </div>
+                <div className="contact-content">
+                    <div className="contact-intro">
+                        <p className="contact-title display-font">
+                            Have a project in mind? Let&apos;s collaborate and bring your ideas to life!
+                        </p>
+                        <p className="contact-description">
+                            I&apos;m always open to new opportunities and collaborations. Whether you have a project, a question, or just want to say hello, feel free to reach out. I&apos;d love to hear from you!
+                        </p>
+                    </div>
+                    <div className="contact-actions">
+                        <a href="mailto:
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}

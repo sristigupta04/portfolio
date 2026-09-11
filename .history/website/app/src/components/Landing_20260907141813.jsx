@@ -1,0 +1,15 @@
+import { Canvas } from "@react-three/fiber";
+import {OrbitControls,  Text} from "@react-three/drei";
+
+
+function About({onClick}){
+    return (
+        <group position={[3,1.5,-3]}
+        onClick={onClick
+            onPointerDown={(e)=>{
+           e.stopPropagation();
+           document.body.style.cursor = 'pointer';
+            }}
+        }
+    )
+}
