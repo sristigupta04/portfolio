@@ -69,7 +69,16 @@ export const projects: Project[] = [
     link: "https://github.com/sristigupta04/tic-tac-toe",
   },
 
-  
+  {
+    number: "07",
+    title: "Vistara",
+    description:
+      "Full-stack property listing platform with JWT/Auth.js authentication and dynamic search, connected to a MongoDB-backed user-management service and containerized with Docker.",
+    tags: ["Next.js", "MongoDB", "Docker"],
+    imageUrl: "/images/airbnb.png",
+    link: "https://github.com/sristigupta04/Airbnb-app",
+  },
+
   {
     number: "08",
     title: "Snake Game",
@@ -88,14 +97,5 @@ export const projects: Project[] = [
     tags: ["Python", "Flask", "SQLite"],
     imageUrl: "/images/todo.png",
     link: "https://github.com/sristigupta04/todo-app_flask",
-  },
-  {
-    number: "07",
-    title: "Vistara",
-    description:
-      " ON GOING PROJECT as major project for my academic studies. A full-stack property listing platform with JWT/Auth.js authentication and dynamic search, and also with Data Science and Machine Learning.",
-    tags: ["Next.js", "MongoDB", "Docker"],
-    imageUrl: "/images/airbnb.png",
-    link: "https://github.com/sristigupta04/Airbnb-app",
   },
 ];

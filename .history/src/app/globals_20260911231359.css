@@ -924,16 +924,6 @@ img {
   border-color: rgba(242, 236, 223, 0.35);
 }
 
-.project-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-.project-arrow {
-  cursor: pointer;
-}
 /* =========================================================
    PROJECT TOP
 ========================================================= */

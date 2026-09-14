@@ -93,7 +93,7 @@ export const projects: Project[] = [
     number: "07",
     title: "Vistara",
     description:
-      " ON GOING PROJECT as major project for my academic studies. A full-stack property listing platform with JWT/Auth.js authentication and dynamic search, and also with Data Science and Machine Learning.",
+      " ON GOING PROJECT as major project for my acedmic studies. A full-stack property listing platform with JWT/Auth.js authentication and dynamic search, and also with Data Science and real-time features.",
     tags: ["Next.js", "MongoDB", "Docker"],
     imageUrl: "/images/airbnb.png",
     link: "https://github.com/sristigupta04/Airbnb-app",
